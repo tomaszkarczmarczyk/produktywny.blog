@@ -2,6 +2,8 @@
   "name": "produktywny.blog",
   "version": "0.1.0",
   "private": true,
+  "author": "Tomasz Karczmarczyk <tokarczmarczyk@gmail.com> (https://tomaszkarczmarczyk.com)",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
