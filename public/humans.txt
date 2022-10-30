@@ -1,0 +1,11 @@
+/* TEAM */
+
+	Founder: Tomasz Karczmarczyk
+	Contact: tomasz [at] produktywny.blog
+	Location: Poland
+
+/* SITE */
+
+	Language: Polish
+	Standards: Next.js, TypeScript, Tailwind CSS, HTML
+	IDE: Visual Studio Code
