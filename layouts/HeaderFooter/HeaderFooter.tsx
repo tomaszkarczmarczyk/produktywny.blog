@@ -1,5 +1,6 @@
-import { Footer, Header } from '@/components'
-import type { HeaderFooterLayoutProps } from './HeaderFooter.types'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import type { HeaderFooterLayoutProps } from '@/layouts/HeaderFooter'
 
 const HeaderFooterLayout = ({ children }: HeaderFooterLayoutProps) => {
   return (

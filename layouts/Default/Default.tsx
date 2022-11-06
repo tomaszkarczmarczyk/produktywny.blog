@@ -1,10 +1,10 @@
-import siteMeta from '@/lib/siteMeta'
+import type { DefaultLayoutProps } from '@/layouts/Default'
+import getSiteMeta from '@/lib/getSiteMeta'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import type { DefaultLayoutProps } from './Default.types'
 
 const DefaultLayout = ({ children }: DefaultLayoutProps) => {
-  const { hostname, title, delimiter } = siteMeta
+  const { hostname, title, delimiter } = getSiteMeta
   const router = useRouter()
   const { locale, pathname } = router
 
