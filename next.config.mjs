@@ -4,16 +4,14 @@ import withMDX from '@next/mdx'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
-const mdx = withMDX({
+export default withMDX({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
     rehypePlugins: [],
     providerImportSource: '@mdx-js/react',
   },
-})
-
-export default mdx({
+})({
   i18n: {
     locales: ['pl'],
     defaultLocale: 'pl',
