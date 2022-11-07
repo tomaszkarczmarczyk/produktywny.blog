@@ -7,6 +7,13 @@ const getSiteMeta: GetSiteMeta = {
   paths: {
     articles: ['pages', 'blog'],
   },
+  navigation: {
+    main: [
+      { path: '/blog', name: 'Blog' },
+      { path: '/newsletter', name: 'Newsletter' },
+      { path: '/o-mnie', name: 'O mnie' },
+    ],
+  },
 }
 
 export default getSiteMeta
