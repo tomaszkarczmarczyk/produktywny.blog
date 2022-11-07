@@ -3,7 +3,11 @@
 module.exports = {
   content: ['./components/**/*.tsx', './layouts/**/*.tsx', './pages/**/*.tsx'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#05f',
+      },
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 }
