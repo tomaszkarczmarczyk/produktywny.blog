@@ -1,5 +1,7 @@
+import { ReactNode } from 'react'
+
 export type FancyLinkProps = {
-  children: string
+  children: ReactNode
   href: string
   nofollow?: boolean
   className?: string
