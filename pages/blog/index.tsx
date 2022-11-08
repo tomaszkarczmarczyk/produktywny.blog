@@ -1,4 +1,5 @@
 import ArticleCard from '@/components/ArticleCard'
+import Breadcrumb from '@/components/Breadcrumb'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import PageHeader from '@/components/PageHeader'
@@ -30,7 +31,7 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-const ArchivePage: NextPageWithLayout<ArchivePageProps> = ({ articles }) => {
+const BlogPage: NextPageWithLayout<ArchivePageProps> = ({ articles }) => {
   const pageTitle = 'Blog'
   const pageDescription =
     'Aliqua commodo cillum sit dolor pariatur esse laborum. Commodo dolore sit nulla quis eu ipsum fugiat laborum qui commodo aliquip.'
@@ -54,6 +55,7 @@ const ArchivePage: NextPageWithLayout<ArchivePageProps> = ({ articles }) => {
         <Header />
         <div>
           <PageHeader title={pageTitle} description={pageDescription} />
+          <Breadcrumb items={[{ path: '', name: 'Blog' }]} />
 
           <main className="grid grid-cols-[1fr_640px_1fr] content-start gap-10 divide-y divide-slate-200 py-10 [&>*+*]:pt-[39px] [&>*+*_a]:before:top-[39px]">
             {articles.map((article) => (
@@ -67,4 +69,4 @@ const ArchivePage: NextPageWithLayout<ArchivePageProps> = ({ articles }) => {
   )
 }
 
-export default ArchivePage
+export default BlogPage
