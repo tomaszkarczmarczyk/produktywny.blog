@@ -2,11 +2,7 @@ import FancyLink from '@/components/FancyLink'
 
 const SocialMedia = () => (
   <>
-    <FancyLink
-      href="https://www.facebook.com/produktywny.blog"
-      nofollow
-      className="focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-4 focus-visible:outline-rose-400"
-    >
+    <FancyLink href="https://www.facebook.com/produktywny.blog" nofollow className="focus-4">
       <svg
         className="h-[24px] w-[14px]"
         viewBox="0 0 14 24"
@@ -17,11 +13,7 @@ const SocialMedia = () => (
         <path d="M12.3068 13.5L12.9733 9.15656H8.80567V6.33797C8.80567 5.14969 9.38786 3.99141 11.2544 3.99141H13.1491V0.293438C13.1491 0.293438 11.4297 0 9.78583 0C6.35364 0 4.1102 2.08031 4.1102 5.84625V9.15656H0.295044V13.5H4.1102V24H8.80567V13.5H12.3068Z" />
       </svg>
     </FancyLink>
-    <FancyLink
-      href="https://www.instagram.com/produktywny.blog"
-      nofollow
-      className="focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-4 focus-visible:outline-rose-400"
-    >
+    <FancyLink href="https://www.instagram.com/produktywny.blog" nofollow className="focus-4">
       <svg
         className="h-[24px] w-[25px]"
         viewBox="0 0 25 24"

@@ -7,10 +7,7 @@ const Hamburger = () => {
 
   return (
     <>
-      <button
-        onClick={() => setToggle(!toggle)}
-        className="focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-2 focus-visible:outline-rose-400 md:hidden"
-      >
+      <button onClick={() => setToggle(!toggle)} className="focus-2 md:hidden">
         {toggle ? <XMarkIcon className="h-10 w-10 text-white" /> : <Bars3Icon className="h-10 w-10 text-white" />}
       </button>
 

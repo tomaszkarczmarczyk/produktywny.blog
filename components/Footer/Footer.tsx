@@ -14,21 +14,18 @@ const Footer: NextComponentType = () => {
           <div>
             <FancyLink
               href="/polityka-prywatnosci"
-              className="inline-block text-xs font-bold leading-none text-primary focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-2 focus-visible:outline-rose-400"
+              className="focus-2 inline-block text-xs font-bold leading-none text-primary"
             >
               Polityka prywatności
             </FancyLink>
             {' | '}
-            <FancyLink
-              href="/o-blogu"
-              className="inline-block text-xs font-bold leading-none text-primary focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-2 focus-visible:outline-rose-400"
-            >
+            <FancyLink href="/o-blogu" className="focus-2 inline-block text-xs font-bold leading-none text-primary">
               O blogu
             </FancyLink>
             {' | '}
             <FancyLink
               href="mailto:tomasz@produktywny.blog"
-              className="inline-block text-xs font-bold leading-none text-primary focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-2 focus-visible:outline-rose-400"
+              className="focus-2 inline-block text-xs font-bold leading-none text-primary"
             >
               Kontakt
             </FancyLink>

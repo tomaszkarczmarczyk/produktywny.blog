@@ -10,8 +10,7 @@ const MobileMenu = ({ toggle, setToggle }: MobileMenuProps) => {
   const {
     navigation: { main: navigation },
   } = getSiteMeta
-  const defaultLinkCLass =
-    'text-4xl font-bold leading-none focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-8 focus-visible:outline-rose-400'
+  const defaultLinkCLass = 'text-4xl font-bold leading-none focus-8'
   const currentLinkClass = `${defaultLinkCLass} text-primary`
   const router = useRouter()
   const { pathname } = router
@@ -21,10 +20,7 @@ const MobileMenu = ({ toggle, setToggle }: MobileMenuProps) => {
   return (
     <aside className="fixed inset-0 z-50 grid grid-rows-[80px_1fr_80px] bg-white/80 backdrop-blur">
       <header className="flex items-center px-10">
-        <button
-          onClick={() => setToggle(!toggle)}
-          className="focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-2 focus-visible:outline-rose-400"
-        >
+        <button onClick={() => setToggle(!toggle)} className="focus-2">
           <XMarkIcon className="h-10 w-10 text-black" />
         </button>
       </header>

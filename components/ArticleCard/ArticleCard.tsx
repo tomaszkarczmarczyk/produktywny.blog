@@ -10,7 +10,7 @@ const ArticleCard = ({ title, description, pathname }: ArticleProps) => {
       <footer>
         <Link
           href={pathname}
-          className="inline-flex items-center justify-start space-x-2 before:absolute before:inset-0 before:content-[''] focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-8 focus-visible:outline-rose-400"
+          className="focus-8 inline-flex items-center justify-start space-x-2 before:absolute before:inset-0 before:content-['']"
         >
           <span className="font-bold">Czytaj dalej</span>
           <ArrowRightIcon className="h-6 w-6 text-primary" />

@@ -5,9 +5,9 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const defaultLinkCLass: string =
-  'focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-[16px] focus-visible:outline-rose-400 relative z-10 font-bold uppercase text-white before:absolute before:left-1 before:right-1 before:-bottom-2 before:-z-10 before:h-0.5 before:origin-center before:translate-y-1 before:bg-white before:opacity-0 before:transition before:duration-200 before:content-[""] hover:before:translate-y-0 hover:before:opacity-100'
+  'focus-8 focus-visible:outline-offset-[16px] relative z-10 font-bold uppercase text-white before:absolute before:left-1 before:right-1 before:-bottom-2 before:-z-10 before:h-0.5 before:origin-center before:translate-y-1 before:bg-white before:opacity-0 before:transition before:duration-200 before:content-[""] hover:before:translate-y-0 hover:before:opacity-100'
 const currentLinkClass: string =
-  'focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-[16px] focus-visible:outline-rose-400 relative z-10 font-bold uppercase text-white before:absolute before:left-1 before:right-1 before:-bottom-2 before:-z-10 before:h-0.5 before:bg-white before:content-[""]'
+  'focus-8 focus-visible:outline-offset-[16px] relative z-10 font-bold uppercase text-white before:absolute before:left-1 before:right-1 before:-bottom-2 before:-z-10 before:h-0.5 before:bg-white before:content-[""]'
 
 const Header = () => {
   const {
@@ -24,10 +24,7 @@ const Header = () => {
       }`}
     >
       <figure>
-        <Link
-          href="/"
-          className="text-4xl font-bold text-white focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-8 focus-visible:outline-rose-400"
-        >
+        <Link href="/" className="focus-8 block text-4xl font-bold text-white">
           <svg
             className="w-80"
             viewBox="0 0 607 61"

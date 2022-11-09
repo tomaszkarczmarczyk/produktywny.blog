@@ -7,10 +7,7 @@ const Breadcrumb = ({ items }: BreadcrumbProps) => {
     <nav className="mt-10 grid grid-cols-[1fr_640px_1fr]">
       <ul className="col-start-2 col-end-3 flex">
         <li className="flex items-center">
-          <FancyLink
-            href="/"
-            className="block focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-2 focus-visible:outline-rose-400"
-          >
+          <FancyLink href="/" className="focus-2 block">
             <HomeIcon className="h-6 w-6 text-primary" />
           </FancyLink>
         </li>
@@ -22,10 +19,7 @@ const Breadcrumb = ({ items }: BreadcrumbProps) => {
               {index === length - 1 ? (
                 <span className="leading-none">{name}</span>
               ) : (
-                <FancyLink
-                  href={path}
-                  className="leading-none text-primary focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-2 focus-visible:outline-rose-400"
-                >
+                <FancyLink href={path} className="focus-2 leading-none text-primary">
                   {name}
                 </FancyLink>
               )}

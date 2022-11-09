@@ -8,6 +8,20 @@
   }
 }
 
+@layer components {
+  .focus-2 {
+    @apply focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-2 focus-visible:outline-rose-400;
+  }
+
+  .focus-4 {
+    @apply focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-4 focus-visible:outline-rose-400;
+  }
+
+  .focus-8 {
+    @apply focus-visible:rounded focus-visible:outline-none focus-visible:outline-offset-8 focus-visible:outline-rose-400;
+  }
+}
+
 @layer utilities {
   .bg-clip {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
